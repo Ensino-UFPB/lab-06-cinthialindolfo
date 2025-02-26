@@ -20,11 +20,16 @@
             <h2 class="cartao__titulo">Cadastro de Produto</h2>
             <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
                 <fieldset>
-                    <legend class="formulario__legenda">Informações do Produto</legend>
                     
                     <div class="input-container">
                         <input name="nomeProduto" id="nomeProduto" class="input" type="text" placeholder="Nome do Produto" data-tipo="nomeProduto" required>
                         <label class="input-label" for="nomeProduto">Nome do Produto</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input name="descricao" id="descricao" class="input" type="text" placeholder="Descrição do Produto" data-tipo="descricao" required>
+                        <label class="input-label" for="descricao">Descrição do Produto</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
 
@@ -37,6 +42,12 @@
                     <div class="input-container">
                         <input name="quantidade" id="quantidade" class="input" type="text" placeholder="Quantidade" data-tipo="quantidade" required>
                         <label class="input-label" for="quantidade">Quantidade</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input name="validade" id="validade" class="input" type="date" placeholder="Validade" data-tipo="validade" required>
+                        <label class="input-label" for="validade">Validade</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                 </fieldset>
